@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include "grc/grc.h"
 #include "grc/grc_error_codes.h"
