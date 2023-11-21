@@ -1,4 +1,4 @@
 [submodule "grc_sdk"]
 	path = grc_sdk
-	url = https://mir.dev/bitbucket/scm/riscv/grc_sdk.git
-	branch = feature/arduino
+	url = https://github.com/Grovety/grc_sdk.git
+	branch = feature/project_structure
