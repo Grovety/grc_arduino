@@ -34,7 +34,7 @@ void setup()
     Serial.begin(115200);
     Serial.println("Started...");
 
-    Wire.setPins(12, 13);
+    Wire.setPins(13, 12);
 
     ll_dev.type = PROTOCOL_INTERFACE_I2C_ARDUINO;
     ll_dev.arduino_wire = &Wire;

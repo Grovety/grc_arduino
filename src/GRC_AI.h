@@ -4,21 +4,19 @@
 #include <Arduino.h>
 #include <Wire.h>
 
-#include "grc/grc.h"
-#include "grc/i2c/drivers/arduino/grc_ll_i2c_arduino.h"
+#include "grc/Grc.hpp"
+#include "grc/drivers/arduino/grc_arduino.h"
 
-class GRC_AI {
+
+class GRC_AI : public Grc {
 public:
-    GRC_AI(uint32_t arch, TwoWire& wire);
+    GRC_AI(TwoWire& wire, int reset_pin);
     ~GRC_AI();
 
     uint32_t version() const;
 
-    int begin();
-    void end();
-
 private:
-    grc_device dev;
+    struct grc_ll_i2c_dev_arduino ll_dev;
 
 
 };

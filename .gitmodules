@@ -1,4 +1,0 @@
-[submodule "grc_sdk"]
-	path = grc_sdk
-	url = https://github.com/Grovety/grc_sdk.git
-	branch = feature/project_structure
